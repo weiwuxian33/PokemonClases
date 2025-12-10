@@ -21,12 +21,12 @@ public class Charizard extends Pokemon {
 
     @Override
     public void gritar() {
-        System.out.println("Grrrraaaawr");
+        System.out.println(" Raaaaaawwwrr ");
     }
 
     @Override
     public void mostrarInfo(int nivel, String entrenador) {
         super.mostrarInfo(nivel, entrenador);
-        System.out.println("Tipo: Fuego | Altura de vuelo: " + vuela);
+        System.out.println("Tipo: Fuego ; Altura de vuelo: " + vuela);
     }
 }

@@ -21,12 +21,12 @@ public class Pikachu extends Pokemon {
 
     @Override
     public void gritar() {
-        System.out.println("Pika Pika");
+        System.out.println("Pika Pikachuu");
     }
 
     @Override
     public void mostrarInfo(int nivel, String entrenador) {
         super.mostrarInfo(nivel, entrenador);
-        System.out.println("Tipo: Electrico | Voltios: " + electricidad);
+        System.out.println("Tipo: Electrico ; Voltios: " + electricidad);
     }
 }
