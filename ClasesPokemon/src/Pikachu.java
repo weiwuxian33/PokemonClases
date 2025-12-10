@@ -16,7 +16,7 @@ public class Pikachu extends Pokemon {
 
     @Override
     public void atacar() {
-        System.out.println(getNombre() + " usa Impactrueno");
+        System.err.println(getNombre() + " usa Impactrueno");
     }
 
     @Override
@@ -25,7 +25,8 @@ public class Pikachu extends Pokemon {
     }
 
     @Override
-    public void mostrarInfo() {
-        System.out.println("Pokemon: " + getNombre() + " | Vida: " + getVida() + " | Voltios: " + electricidad);
+    public void mostrarInfo(int nivel, String entrenador) {
+        super.mostrarInfo(nivel, entrenador);
+        System.out.println("Tipo: Electrico | Voltios: " + electricidad);
     }
 }

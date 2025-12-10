@@ -23,5 +23,9 @@ public abstract class Pokemon implements InterAtaque, InterSonido {
         this.vida = vida;
     }
 
-    public abstract void mostrarInfo();
+    public void mostrarInfo(int nivel, String entrenador) {
+        System.out.println("--- Ficha de " + nombre + " ---");
+        System.out.println("Entrenador: " + entrenador + " | Nivel: " + nivel);
+        System.out.println("Vida Base: " + vida);
+    }
 }

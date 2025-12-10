@@ -1,22 +1,22 @@
 public class Charizard extends Pokemon {
-    private boolean vuela;
+    private String vuela;
 
-    public Charizard(String nombre, int vida, boolean vuela) {
+    public Charizard(String nombre, int vida, String vuela) {
         super(nombre, vida);
         this.vuela = vuela;
     }
 
-    public boolean isVuela() {
+    public String getVuela() {
         return vuela;
     }
 
-    public void setVuela(boolean vuela) {
+    public void setVuela(String vuela) {
         this.vuela = vuela;
     }
 
     @Override
     public void atacar() {
-        System.out.println(getNombre() + " lanza Llamarada");
+        System.err.println(getNombre() + " lanza Llamarada");
     }
 
     @Override
@@ -25,7 +25,8 @@ public class Charizard extends Pokemon {
     }
 
     @Override
-    public void mostrarInfo() {
-        System.out.println("Pokemon: " + getNombre() + " | Vida: " + getVida() + " | Vuela: " + vuela);
+    public void mostrarInfo(int nivel, String entrenador) {
+        super.mostrarInfo(nivel, entrenador);
+        System.out.println("Tipo: Fuego | Altura de vuelo: " + vuela);
     }
 }
